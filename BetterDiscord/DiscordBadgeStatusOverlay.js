@@ -1,9 +1,9 @@
 /**
- * @name IconBadgeOutput
+ * @name Discord Badge Status Overlay
  * @version 0.0.1
- * @website https://github.com/Mandelbrottt/BetterDiscordAddons/tree/master/Plugins/IconBadgePipeOutput
- * @source https://raw.githubusercontent.com/Mandelbrottt/BetterDiscordAddons/master/Plugins/IconBadgePipeOutput/IconBadgePipeOutput.plugin.js
- * @updateUrl https://raw.githubusercontent.com/Mandelbrottt/BetterDiscordAddons/master/Plugins/IconBadgePipeOutput/IconBadgePipeOutput.plugin.js
+ * @website https://github.com/Mandelbrottt/discord-badge-status-overlay
+ * @source https://github.com/Mandelbrottt/discord-badge-status-overlay/BetterDiscord/IconBadgePipeOutput.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/Mandelbrottt/discord-badge-status-overlay/master/BetterDiscord/IconBadgePipeOutput.plugin.js
  */
 
 /*@cc_on
@@ -28,7 +28,7 @@
     WScript.Quit();
 @else@*/
 
-module.exports = class IconBadgeOutput {
+module.exports = class DiscordBadgeStatusOverlay {
     badgeStatusVarName = "badgeStatus";
 
     start() {
