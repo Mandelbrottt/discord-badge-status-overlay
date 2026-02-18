@@ -1,9 +1,9 @@
 /**
- * @name Discord Badge Status Overlay
+ * @name DiscordBadgeStatusOverlay
  * @version 0.0.1
  * @website https://github.com/Mandelbrottt/discord-badge-status-overlay
- * @source https://github.com/Mandelbrottt/discord-badge-status-overlay/BetterDiscord/IconBadgePipeOutput.plugin.js
- * @updateUrl https://raw.githubusercontent.com/Mandelbrottt/discord-badge-status-overlay/master/BetterDiscord/IconBadgePipeOutput.plugin.js
+ * @source https://github.com/Mandelbrottt/discord-badge-status-overlay/BetterDiscord/DiscordBadgeStatusOverlay.plugin.js
+ * @updateUrl https://github.com/Mandelbrottt/discord-badge-status-overlay/blob/main/BetterDiscord/DiscordBadgeStatusOverlay.plugin.js
  */
 
 /*@cc_on
