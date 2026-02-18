@@ -1,0 +1,33 @@
+name: Build Plugin
+
+on: push
+
+jobs:
+  build-n-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+        with:
+          submodules: true
+
+      - name: Add MSBuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build
+        working-directory: "${{ github.workspace }}/RainMeter/Plugin/"
+        run: >
+          msbuild
+          /maxCpuCount
+          /property:Configuration=Release
+          /property:Platform=x86
+          /verbosity:minimal
+          DiscordBadgeStatusOverlay.sln
+
+          msbuild
+          /maxCpuCount
+          /property:Configuration=Release
+          /property:Platform=x64
+          /verbosity:minimal
+          DiscordBadgeStatusOverlay.sln
