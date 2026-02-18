@@ -38,15 +38,15 @@ jobs:
           DiscordBadgeStatusOverlay.sln
 
       - name: Prepare RainMeter Skin Package Folder
+        shell: bash
         run: |
-          mkdir package
-          mkdir package/Skins
-          mkdir package/Plugins/32bit
-          mkdir package/Plugins/64bit
-          copy RainMeter/RMSKIN.ini package/
-          copy RainMeter/Plugin/x32/Release/DiscordBadgeStatusOverlay.dll package/Plugins/32bit
-          copy RainMeter/Plugin/x64/Release/DiscordBadgeStatusOverlay.dll package/Plugins/64bit
-          xcopy RainMeter/Skin/ package/Skins/DiscordBadgeStatusOverlay /i /s 
+          mkdir -p "package/Skins"
+          mkdir -p "package/Plugins/32bit"
+          mkdir -p "package/Plugins/64bit"
+          cp "RainMeter/RMSKIN.ini" "package/"
+          cp "RainMeter/Plugin/x32/Release/DiscordBadgeStatusOverlay.dll" "package/Plugins/32bit"
+          cp "RainMeter/Plugin/x64/Release/DiscordBadgeStatusOverlay.dll" "package/Plugins/64bit"
+          cp -r "RainMeter/Skin/" "package/Skins/DiscordBadgeStatusOverlay"
 
       - name: Build rmskin
         id: builder
