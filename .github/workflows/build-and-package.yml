@@ -43,10 +43,10 @@ jobs:
           mkdir package/Skins
           mkdir package/Plugins/32bit
           mkdir package/Plugins/64bit
-          copy /i /s RainMeter/Skin/RMSKIN.ini package/
+          copy RainMeter/Skin/RMSKIN.ini package/ /i /s 
           copy RainMeter/Plugin/x32/Release/DiscordBadgeStatusOverlay.dll package/Plugins/32bit
           copy RainMeter/Plugin/x64/Release/DiscordBadgeStatusOverlay.dll package/Plugins/64bit
-          xcopy /i /s RainMeter/Skin/ package/Skins/DiscordBadgeStatusOverlay
+          xcopy RainMeter/Skin/ package/Skins/DiscordBadgeStatusOverlay /i /s 
 
       - name: Build rmskin
         id: builder
