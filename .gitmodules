@@ -1,3 +1,3 @@
-[submodule "Rainmeter/Plugin/rainmeter-plugin-sdk"]
-	path = Rainmeter/Plugin/rainmeter-plugin-sdk
-	url = https://github.com/rainmeter/rainmeter-plugin-sdk.git
+[submodule "RainMeter/Plugin/rainmeter-plugin-sdk"]
+	path = RainMeter/Plugin/rainmeter-plugin-sdk
+	url = git@github.com:rainmeter/rainmeter-plugin-sdk.git
